@@ -1,0 +1,69 @@
+    .attribution { font-size: 11px; text-align: center; margin-top: 1rem;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    /* White: hsl(0, 0%, 100%)
+    - Light gray: hsl(212, 45%, 89%)
+    - Grayish blue: hsl(220, 15%, 55%)
+    - Dark blue: hsl(218, 44%, 22%) */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    background: hsl(212, 45%, 89%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    
+}
+.container{
+    background:  hsl(0, 0%, 100%);
+    max-width: 375px;
+    /* margin: auto; */
+    padding: 1.2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+}
+
+.container article img{
+    border-radius: 1rem;
+}
+.container article:last-child{
+    width: 90%;
+    text-align: center;
+}
+.container article h1{
+    color: hsl(218, 44%, 22%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.container article p{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+    width: 90%;
+    margin:auto ;
+}
+
+/* applies when screen got smaller than 375px */
+@media only screen and (max-width: 375px) {
+    .container{
+        width: 350px;
+    }
+}
